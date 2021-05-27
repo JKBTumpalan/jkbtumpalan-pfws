@@ -22,31 +22,31 @@ import { Router, useRouter } from "next/router";
 const navLinks = [
   {
     text: "HOME",
-    pathname: "/",
+    pathname: "/home",
     active: true,
     icon: faHome,
   },
   {
     text: "ABOUT",
-    pathname: "/",
+    pathname: "/about",
     active: true,
     icon: faUser,
   },
   {
     text: "SKILLS",
-    pathname: "/",
+    pathname: "/skills",
     active: true,
     icon: faCogs,
   },
   {
     text: "WORKS",
-    pathname: "/",
+    pathname: "/works",
     active: true,
     icon: faEye,
   },
   {
     text: "CONTACT",
-    pathname: "/",
+    pathname: "/contact",
     active: true,
     icon: faEnvelope,
   },
@@ -67,14 +67,12 @@ const NavbarLink: React.FC<NavLinkProps> = ({
 }) => {
   return (
     <Link href={`${pathname}`} passHref>
-      <a className="flex flex-row items-center text-teal-400 w-full dark:bg-gray-700 dark:text-gray-200">
-        <div className="group w-full mt-3 transition duration-250 ease-in-out transform hover:scale-110">
-          <div className="block group-hover:hidden h-10 w-full text-center">
+      <a className="items-center text-teal-400 dark:bg-gray-700 dark:text-gray-200 mt-4">
+        <div className="group mt-3 h-10 transition duration-250 ease-in-out transform hover:scale-110">
+          <div className="block group-hover:hidden text-center ">
             <FontAwesomeIcon
-              className="w-full text-coolgray-400"
-              size="2x"
+              className="w-8 h-8 text-coolgray-400"
               icon={icon}
-              fixedWidth
             />
           </div>
           <div
@@ -104,7 +102,7 @@ export const Sidebar: React.FC = ({ children }) => {
           />
         </div>
 
-        <div className="flex flex-col justify-center items-center h-3/5 w-full">
+        <div className="flex flex-col justify-start items-center h-3/5 w-full pt-5">
           {navLinks.map((link, key) => {
             return (
               <NavbarLink
@@ -121,29 +119,29 @@ export const Sidebar: React.FC = ({ children }) => {
         <div className="flex flex-col justify-end items-center flex-1 h-1/5">
           <div className="mt-4">
             <FontAwesomeIcon
-              className="w-full cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="1x"
+              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size="sm"
               icon={faFacebook}
             />
           </div>
           <div className="mt-4">
             <FontAwesomeIcon
-              className="w-full cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="1x"
+              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size="sm"
               icon={faLinkedin}
             />
           </div>
           <div className="mt-4">
             <FontAwesomeIcon
-              className="w-full cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="1x"
+              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size="sm"
               icon={faTwitter}
             />
           </div>
           <div className="mt-4">
             <FontAwesomeIcon
-              className="w-full cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="1x"
+              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              size="sm"
               icon={faInstagram}
             />
           </div>
