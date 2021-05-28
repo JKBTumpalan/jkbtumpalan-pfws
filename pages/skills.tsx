@@ -1,6 +1,7 @@
 import { Description } from "@headlessui/react/dist/components/description/description";
 import jkbtumpalan_avatar from "../assets/jkbtumpalan_avatar.jpg";
 import CardComponent1 from "../components/CardComponent1";
+import Head from "next/head";
 
 const mainSkillset = [
   {
@@ -20,6 +21,9 @@ const mainSkillset = [
 export const Skills: React.FC = () => {
   return (
     <section className="text-gray-600 body-font">
+      <Head>
+        <title> Skills </title>
+      </Head>
       <div className="container px-5 pb-6 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h2 className="text-xs text-teal-500 tracking-widest font-medium title-font mb-1">

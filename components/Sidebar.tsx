@@ -22,7 +22,7 @@ import { Router, useRouter } from "next/router";
 const navLinks = [
   {
     text: "HOME",
-    pathname: "/home",
+    pathname: "/",
     active: true,
     icon: faHome,
   },

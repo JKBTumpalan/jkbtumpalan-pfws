@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export const Gallery: React.FC = () => {
   return (
     <section className="text-gray-600 body-font">

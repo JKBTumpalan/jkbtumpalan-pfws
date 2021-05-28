@@ -1,6 +1,12 @@
+import Head from "next/head";
+
 export const Works: React.FC = () => {
   return (
     <section className="text-gray-600 body-font">
+      <Head>
+        <title> Works </title>
+      </Head>
+
       <div className="container px-5 pb-6 mx-auto flex flex-wrap">
         <div className="flex w-full sm:flex-row flex-col">
           <div className="flex flex-col text-left w-full mb-20">

@@ -1,8 +1,13 @@
 import jkbtumpalan_avatar from "../assets/jkbtumpalan_avatar.jpg";
+import Head from "next/head";
 
 export const About: React.FC = () => {
   return (
     <section className="text-gray-600 body-font">
+      <Head>
+        <title> About </title>
+      </Head>
+
       <div className="container px-5 py-5 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
           <div className="rounded-lg h-64 overflow-hidden">
