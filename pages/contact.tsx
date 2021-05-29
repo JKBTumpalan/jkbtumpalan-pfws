@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const Contact: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font relative bg-gray-700 w-screen">
+    <section className="text-gray-600 body-font bg-gray-700 w-screen sm:pl-30 p-20">
       <Head>
         <title> Contact </title>
       </Head>
@@ -77,10 +77,16 @@ export const Contact: React.FC = () => {
               className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             ></textarea>
           </div>
-          <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Submit
-          </button>
-          <p className="text-xs text-gray-500 mt-3"></p>
+          <a href="https://m.me/khalsuu">
+            <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              Submit
+            </button>
+          </a>
+          <p className="text-xs text-gray-500 mt-3">
+            {" "}
+            As of now, the submission function is not yet functional. Submitting
+            the button will direct you to my facebook account.
+          </p>
         </div>
       </div>
     </section>

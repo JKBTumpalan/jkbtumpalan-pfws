@@ -67,7 +67,7 @@ const NavbarLink: React.FC<NavLinkProps> = ({
 }) => {
   return (
     <Link href={`${pathname}`} passHref>
-      <a className="items-center text-teal-400 sm:mt-4">
+      <a className="items-center text-teal-400 sm:mt-4 ">
         <div className="group mt-3 h-10 transition duration-250 ease-in-out transform hover:scale-110">
           <div className="block group-hover:hidden text-center ">
             <FontAwesomeIcon
@@ -90,7 +90,7 @@ export const Sidebar: React.FC = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="sm:inline-block fixed sm:w-1/7 w-screen sm:top-0 bottom-0 left-0">
+    <div className="sm:inline-block fixed sm:w-1/7 sm:top-0 bottom-0 left-0">
       <div className="flex sm:flex-col flex-row sm:w-20 w-screen justify-end sm:h-screen h-12 sm:py-8 border-r bg-gray-900">
         <div className="sm:flex hidden sm:flex-col flex-row items-center justify-start sm:h-1/5 h-12">
           <Image

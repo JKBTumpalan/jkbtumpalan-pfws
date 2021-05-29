@@ -1,9 +1,16 @@
 import jkbtumpalan_avatar from "../assets/jkbtumpalan_avatar.jpg";
 import Head from "next/head";
+import aboutpic from "../assets/pic1.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faGamepad,
+  faVolleyballBall,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const About: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font w-screen bg-gray-700">
+    <section className="text-gray-600 body-font w-screen bg-gray-700 sm:pl-30 p-20">
       <Head>
         <title> About </title>
       </Head>
@@ -14,7 +21,7 @@ export const About: React.FC = () => {
             <img
               alt="content"
               className="object-cover object-center h-full w-full"
-              src="https://dummyimage.com/1200x500"
+              src={aboutpic}
             ></img>
           </div>
           <div className="flex flex-col sm:flex-row mt-10">
@@ -32,6 +39,23 @@ export const About: React.FC = () => {
                 </h2>
                 <div className="w-2/3 h-1 bg-truegray-500 rounded mt-2 mb-4"></div>
                 <div className="text-md text-white">About me</div>
+                <div className="flex sm:flex-col flex-row space-around py-2">
+                  <FontAwesomeIcon
+                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                    size="lg"
+                    icon={faCode}
+                  />
+                  <FontAwesomeIcon
+                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                    size="lg"
+                    icon={faGamepad}
+                  />
+                  <FontAwesomeIcon
+                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                    size="lg"
+                    icon={faVolleyballBall}
+                  />
+                </div>
               </div>
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-truegray-500 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
