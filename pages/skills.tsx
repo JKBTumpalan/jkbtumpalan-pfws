@@ -20,7 +20,7 @@ const mainSkillset = [
 
 export const Skills: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font bg-gray-700 w-screen">
       <Head>
         <title> Skills </title>
       </Head>

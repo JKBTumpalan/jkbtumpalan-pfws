@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export const About: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font w-screen bg-gray-700">
       <Head>
         <title> About </title>
       </Head>

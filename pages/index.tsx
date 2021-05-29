@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="bg-gray-700 w-screen">
       <Head>
         <title> Home </title>
       </Head>

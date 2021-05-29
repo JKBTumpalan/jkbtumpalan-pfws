@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const Works: React.FC = () => {
   return (
-    <div className="text-gray-600 body-font">
+    <div className="text-gray-600 body-font bg-gray-700 w-screen">
       <Head>
         <title> Works </title>
       </Head>
