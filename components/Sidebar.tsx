@@ -67,7 +67,7 @@ const NavbarLink: React.FC<NavLinkProps> = ({
 }) => {
   return (
     <Link href={`${pathname}`} passHref>
-      <a className="items-center text-teal-400 dark:bg-gray-700 dark:text-gray-200 mt-4">
+      <a className="items-center text-teal-400 sm:mt-4">
         <div className="group mt-3 h-10 transition duration-250 ease-in-out transform hover:scale-110">
           <div className="block group-hover:hidden text-center ">
             <FontAwesomeIcon
@@ -90,9 +90,9 @@ export const Sidebar: React.FC = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="sm:inline-block hidden fixed w-1/7 top-0 left-0">
-      <div className="flex flex-col w-20 justify-end h-screen py-8 bg-black border-r dark:bg-gray-800 dark:border-gray-600">
-        <div className="flex flex-col items-center justify-start h-1/5">
+    <div className="sm:inline-block fixed sm:w-1/7 w-screen sm:top-0 bottom-0 left-0">
+      <div className="flex sm:flex-col flex-row sm:w-20 w-screen justify-end sm:h-screen h-12 sm:py-8 border-r bg-gray-900">
+        <div className="sm:flex hidden sm:flex-col flex-row items-center justify-start sm:h-1/5 h-12">
           <Image
             className="object-cover w-10 h-10 mx-2 rounded-full"
             width={45}
@@ -102,7 +102,7 @@ export const Sidebar: React.FC = ({ children }) => {
           />
         </div>
 
-        <div className="flex flex-col justify-start items-center h-3/5 w-full pt-5">
+        <div className="flex sm:flex-col flex-row sm:justify-start justify-around items-center sm:h-3/5 h-12 w-full sm:pt-5">
           {navLinks.map((link, key) => {
             return (
               <NavbarLink
@@ -116,7 +116,7 @@ export const Sidebar: React.FC = ({ children }) => {
           })}
         </div>
 
-        <div className="flex flex-col justify-end items-center flex-1 h-1/5">
+        <div className="sm:flex hidden sm:flex-col flex-row justify-end items-center flex-1 sm:h-1/5 h-12">
           <div className="mt-4">
             <FontAwesomeIcon
               className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"

@@ -2,12 +2,12 @@ import Head from "next/head";
 
 export const Works: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <div className="text-gray-600 body-font">
       <Head>
         <title> Works </title>
       </Head>
 
-      <div className="container px-5 pb-6 mx-auto flex flex-wrap">
+      <div className="container px-5 pb-6 mx-auto flex flex-wrap border-2 ">
         <div className="flex w-full sm:flex-row flex-col">
           <div className="flex flex-col text-left w-full mb-20">
             <h2 className="text-xs text-teal-500 tracking-widest font-medium title-font mb-1">
@@ -72,7 +72,7 @@ export const Works: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
