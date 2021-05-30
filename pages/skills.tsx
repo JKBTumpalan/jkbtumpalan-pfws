@@ -11,7 +11,7 @@ import {
   faPython,
   faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 const mainSkillset = [
@@ -62,6 +62,12 @@ const subSkillset = [
     description:
       "used C in different university projects and exercises concerning linked list, data structures, algorithm analysis, POSIX threads, parallel programming, etc.",
     icon: faCuttlefish,
+  },
+  {
+    title: "Other programming languages",
+    description:
+      "used different programming languages to fulfill requirements in my course like R, COBOL, Rust, Erlang, Assembly(64), etc. ",
+    icon: faCode,
   },
 ];
 

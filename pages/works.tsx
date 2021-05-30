@@ -1,6 +1,17 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Modal } from "../components/Modal";
+import astar from "../assets/projects/astar.png";
+import khalsuuchat from "../assets/projects/khalsuuchat.png";
+import lightsout from "../assets/projects/lightsout.jpg";
+import lolcode from "../assets/projects/lolcode.png";
+import othello from "../assets/projects/othello.png";
+import r_project from "../assets/projects/R_project.png";
+import revive from "../assets/projects/revive.png";
+import subsetsum from "../assets/projects/subsetsum.png";
+import taks from "../assets/projects/taks.png";
+import noimage from "../assets/projects/noimage.jpg";
+import pacman from "../assets/projects/pacman.jpg";
 
 interface ProjectProps {
   modalTitle: string;
@@ -10,59 +21,65 @@ interface ProjectProps {
 
 const projects: ProjectProps[] = [
   {
-    modalTitle: "Project TAKS",
-    modalContent: "Dummy Project",
-    projectLink: "https://projecttaks.acssuplb.org",
-  },
-  {
-    modalTitle: "KhalsuuChat",
-    modalContent: "Dummy Project",
-    projectLink: "https://khalsuuchat.web.app/",
-  },
-  {
     modalTitle: "Revive Library",
-    modalContent: "Dummy Project",
+    modalContent:
+      "A web application that has basic CRUD functions for library.",
     projectLink: "https://github.com/JKBTumpalan/project-revive-library",
   },
   {
     modalTitle: "LOLCODE Interpreter",
-    modalContent: "Dummy Project",
+    modalContent:
+      "An interpreter for the LOLCODE language using Python with GUI",
     projectLink: "https://github.com/JKBTumpalan/cs124_lolcode.interpreter",
   },
   {
+    modalTitle: "Project TAKS",
+    modalContent:
+      "A full-stack application for the city of balanga that has tax-management, news, and employee management features.",
+    projectLink: "https://projecttaks.acssuplb.org",
+  },
+  {
+    modalTitle: "KhalsuuChat",
+    modalContent: "A centralized chat appplication using Vue and Firebase",
+    projectLink: "https://khalsuuchat.web.app/",
+  },
+  {
     modalTitle: "Twitter Vue",
-    modalContent: "Dummy Project",
+    modalContent:
+      "An application that replicates the twitter web app tweet functionality using Vue.js",
     projectLink: "https://github.com/JKBTumpalan/twitter-vue",
   },
   {
-    modalTitle: "Lights Out!",
-    modalContent: "Dummy Project",
-    projectLink: "https://github.com/JKBTumpalan/tumpalan_exer5_lightsOut",
+    modalTitle: "Polynomial Regression and Simplex Solver",
+    modalContent:
+      "A polynomial regression solver and a custom-problem simplex solver. With GUI using Rshiny and Rstudio.",
+    projectLink: "https://github.com/JKBTumpalan/CMSC-150",
   },
   {
     modalTitle: "Subset Sum Solver",
-    modalContent: "Dummy Project",
+    modalContent: "A subset sum solver using backtracking, C.",
     projectLink:
       "https://github.com/JKBTumpalan/cmsc142-subsetsum-backtracking",
   },
   {
     modalTitle: "Othello",
-    modalContent: "Dummy Project",
+    modalContent: "First game project using python CLI.",
     projectLink: "https://github.com/JKBTumpalan/CMSC12---Othello",
   },
   {
     modalTitle: "PACMAN! in Java",
-    modalContent: "Dummy Project",
+    modalContent: "Game project using Java and JavaFX.",
     projectLink: "https://github.com/JKBTumpalan/CMSC-22-PACMAN-FINAL-PROJECT",
   },
   {
-    modalTitle: "Polynomial Regression and Simplex Solver",
-    modalContent: "Dummy Project",
-    projectLink: "https://github.com/JKBTumpalan/CMSC-150",
+    modalTitle: "Lights Out!",
+    modalContent: "A mobile game application using Kotlin, Android Studio.",
+    projectLink: "https://github.com/JKBTumpalan/tumpalan_exer5_lightsOut",
   },
   {
     modalTitle: "8-puzzle solver using AI",
-    modalContent: "Dummy Project",
+    modalContent:
+      "8-puzzle solver using A-star search, with GUI using python tkinter.",
     projectLink:
       "https://github.com/CMSC-170-1st-Sem-2020-2021/exer03-a-star-search-JKBTumpalan",
   },
@@ -104,8 +121,8 @@ export const Works: React.FC = () => {
           </div>
           <p className="lg:w-1/2 leading-relaxed text-base text-white ml-5 my-5 ">
             Personal and university projects using different technologies. I am
-            still working hard to add more projects and hopefully add more to my
-            current skillset.
+            still working hard to master my current skill set (or add to it) to
+            be able to deliver more quality projects in the future.
           </p>
         </div>
         <Modal
@@ -121,36 +138,36 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(0);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/500x300"
+                src={revive}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(1);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/501x301"
+                src={lolcode}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(2);
               }}
-              className="md:p-2 p-1 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/600x360"
+                src={taks}
               ></img>
             </div>
           </div>
@@ -159,36 +176,36 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(3);
               }}
-              className="md:p-2 p-1 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/601x361"
+                src={khalsuuchat}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(4);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/502x302"
+                src={noimage}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(5);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/503x303"
+                src={r_project}
               ></img>
             </div>
           </div>
@@ -200,36 +217,36 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(6);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/500x300"
+                src={subsetsum}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(7);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/501x301"
+                src={othello}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(8);
               }}
-              className="md:p-2 p-1 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/600x360"
+                src={pacman}
               ></img>
             </div>
           </div>
@@ -238,36 +255,36 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(9);
               }}
-              className="md:p-2 p-1 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/601x361"
+                src={lightsout}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(10);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/502x302"
+                src={astar}
               ></img>
             </div>
             <div
               onClick={() => {
                 openModal(11);
               }}
-              className="md:p-2 p-1 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/503x303"
+                src={noimage}
               ></img>
             </div>
           </div>
