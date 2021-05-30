@@ -10,21 +10,21 @@ import {
 
 export const About: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font w-screen bg-gray-700 sm:pl-30 p-20">
+    <section className="text-gray-600 body-font w-screen bg-gray-800 sm:pl-30 p-20">
       <Head>
         <title> About </title>
       </Head>
 
       <div className="container px-5 py-5 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
-          <div className="rounded-lg h-64 overflow-hidden">
+          <div className="rounded-lg h-64 overflow-hidden animate-fade-in-up">
             <img
               alt="content"
               className="object-cover object-center h-full w-full"
               src={aboutpic}
             ></img>
           </div>
-          <div className="flex flex-col sm:flex-row mt-10">
+          <div className="flex flex-col sm:flex-row mt-10 animate-scale-in-center">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
               <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 overflow-hidden">
                 <img

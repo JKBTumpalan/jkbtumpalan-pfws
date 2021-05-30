@@ -73,7 +73,7 @@ const subSkillset = [
 
 export const Skills: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-700 w-screen sm:pl-30 p-20">
+    <section className="text-gray-600 body-font bg-gray-800 w-screen sm:pl-30 p-20">
       <Head>
         <title> Skills </title>
       </Head>
@@ -111,7 +111,7 @@ export const Skills: React.FC = () => {
         {subSkillset.map((skill, key) => {
           return (
             <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-              <div className="sm:w-24 sm:h-24 h-16 w-16 sm:mr-10 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 flex-shrink-0">
+              <div className="sm:w-24 sm:h-24 h-16 w-16 sm:mr-10 inline-flex items-center justify-center rounded-full bg-teal-100 text-teal-500 flex-shrink-0 animate-roll-in-blurred-left">
                 <FontAwesomeIcon
                   className="w-4 cursor-pointer text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                   size="lg"

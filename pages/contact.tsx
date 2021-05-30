@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export const Contact: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-700 w-screen sm:pl-20 p-10 overflow-visible ">
+    <section className="text-gray-600 body-font bg-gray-800 w-screen sm:pl-20 p-10 overflow-visible ">
       <Head>
         <title> Contact </title>
       </Head>
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="px-5 mx-auto flex flex-col justify-center items-center my-10">
+      <div className="mx-auto flex flex-col justify-center items-center my-10 md:ml-10">
         <div className="h-96 bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative ">
           <div className="mapouter ">
             <div className="gmap_canvas ">

@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+span {
+  font-family: "ManilaSansBold";
+  font-weight: normal;
+  font-style: normal;
+}
+
 .footer {
   width: 100%;
   height: 100px;
