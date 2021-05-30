@@ -90,8 +90,8 @@ export const Sidebar: React.FC = ({ children }) => {
   const router = useRouter();
 
   return (
-    <div className="sm:inline-block fixed sm:w-1/7 sm:top-0 bottom-0 left-0">
-      <div className="flex sm:flex-col flex-row sm:w-20 w-screen justify-end sm:h-screen h-12 sm:py-8 border-r bg-gray-900">
+    <div className="sm:inline-block fixed sm:w-1/7 sm:top-0 bottom-0 left-0 z-10">
+      <div className="flex sm:flex-col flex-row sm:w-20 w-screen justify-end sm:h-screen h-12 sm:py-8 bg-gray-900">
         <div className="sm:flex hidden sm:flex-col flex-row items-center justify-start sm:h-1/5 h-12">
           <Image
             className="object-cover w-10 h-10 mx-2 rounded-full"

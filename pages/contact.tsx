@@ -2,15 +2,50 @@ import Head from "next/head";
 
 export const Contact: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font bg-gray-700 w-screen sm:pl-30 p-20">
+    <section className="text-gray-600 body-font bg-gray-700 w-screen sm:pl-20 p-10 overflow-visible ">
       <Head>
         <title> Contact </title>
       </Head>
-
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <div className="mapouter">
-            <div className="gmap_canvas">
+      <div className="flex flex-col text-center min-w-full ">
+        <h2 className="text-xs text-teal-500 tracking-widest font-medium title-font mb-1">
+          Contact me
+        </h2>
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-truegray-200">
+          Address and Socials
+        </h1>
+      </div>
+      <div className="flex flex-col justify-center items-center text-center rounded-md w-full overflow-visible my-10">
+        <h1 className="text-3xl font-semibold text-teal-500 dark:text-gray-100  "></h1>
+        <p className="max-w-md mt-5 text-truegray-200 dark:text-gray-400 w-full ">
+          Feel free to leave a message if you have any offers, feedback, or
+          concerns.
+        </p>
+        <div className="w-full mt-5 flex flex-col items-center">
+          <div className="flex md:flex-row flex-col justify-center">
+            <a href="https://m.me/khalsuu">
+              <button className="md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+                Send message
+              </button>
+            </a>
+            <a href="mailto:jbtumpalan@up.edu.ph?subject=Website E-mail">
+              <button className="md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+                Send e-mail
+              </button>
+            </a>
+          </div>
+          <div className="w-full">
+            <p className="text-xs text-truegray-200 mt-3">
+              {" "}
+              As of now, the submission function is not yet functional. Clicking
+              the buttons will direct you to my facebook account or e-mail.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="px-5 mx-auto flex flex-col justify-center items-center my-10">
+        <div className="h-96 bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative ">
+          <div className="mapouter ">
+            <div className="gmap_canvas ">
               <iframe
                 width="100%"
                 height="100%"
@@ -21,7 +56,7 @@ export const Contact: React.FC = () => {
               ></iframe>
             </div>
           </div>
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md ">
             <div className="lg:w-1/2 sm:px-24 px-6">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
@@ -41,52 +76,6 @@ export const Contact: React.FC = () => {
               <p className="leading-relaxed">63 905 621 1422</p>
             </div>
           </div>
-        </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 p-12">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Contact me
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            {" "}
-            Feel free to leave a message if you have any offers, feedback, or
-            concerns.{" "}
-          </p>
-          <div className="relative mb-4">
-            <label className="leading-7 text-sm text-gray-600">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            ></input>
-          </div>
-          <div className="relative mb-4">
-            <label className="leading-7 text-sm text-gray-600">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            ></input>
-          </div>
-          <div className="relative mb-4">
-            <label className="leading-7 text-sm text-gray-600">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
-          </div>
-          <a href="https://m.me/khalsuu">
-            <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-              Submit
-            </button>
-          </a>
-          <p className="text-xs text-gray-500 mt-3">
-            {" "}
-            As of now, the submission function is not yet functional. Submitting
-            the button will direct you to my facebook account.
-          </p>
         </div>
       </div>
     </section>
