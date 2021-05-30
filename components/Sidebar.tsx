@@ -118,32 +118,56 @@ export const Sidebar: React.FC = ({ children }) => {
 
         <div className="sm:flex hidden sm:flex-col flex-row justify-end items-center flex-1 sm:h-1/5 h-12">
           <div className="mt-4">
-            <FontAwesomeIcon
-              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="sm"
-              icon={faFacebook}
-            />
+            <a
+              href="https://www.facebook.com/khalsuu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                size="sm"
+                icon={faFacebook}
+              />
+            </a>
           </div>
           <div className="mt-4">
-            <FontAwesomeIcon
-              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="sm"
-              icon={faLinkedin}
-            />
+            <a
+              href="https://www.linkedin.com/in/jkbtumpalan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                size="sm"
+                icon={faLinkedin}
+              />
+            </a>
           </div>
           <div className="mt-4">
-            <FontAwesomeIcon
-              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="sm"
-              icon={faTwitter}
-            />
+            <a
+              href="https://twitter.com/khalsuu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                size="sm"
+                icon={faTwitter}
+              />
+            </a>
           </div>
           <div className="mt-4">
-            <FontAwesomeIcon
-              className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              size="sm"
-              icon={faInstagram}
-            />
+            <a
+              href="https://instagram.com/khalsuu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="w-4 cursor-pointer text-coolgray-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                size="sm"
+                icon={faInstagram}
+              />
+            </a>
           </div>
         </div>
       </div>
