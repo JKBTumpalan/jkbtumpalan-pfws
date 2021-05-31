@@ -39,22 +39,28 @@ export const About: React.FC = () => {
                 </h2>
                 <div className="w-2/3 h-1 bg-truegray-500 rounded mt-2 mb-4"></div>
                 <div className="text-md text-white">About me</div>
-                <div className="flex sm:flex-col flex-row space-around py-2">
-                  <FontAwesomeIcon
-                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                    size="lg"
-                    icon={faCode}
-                  />
-                  <FontAwesomeIcon
-                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                    size="lg"
-                    icon={faGamepad}
-                  />
-                  <FontAwesomeIcon
-                    className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                    size="lg"
-                    icon={faVolleyballBall}
-                  />
+                <div className="loader flex sm:flex-col flex-row space-around py-2 mt-2">
+                  <div className="animate-bounce">
+                    <FontAwesomeIcon
+                      className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      size="lg"
+                      icon={faCode}
+                    />
+                  </div>
+                  <div className="animate-bounce">
+                    <FontAwesomeIcon
+                      className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      size="lg"
+                      icon={faGamepad}
+                    />
+                  </div>
+                  <div className="animate-bounce">
+                    <FontAwesomeIcon
+                      className="w-4 cursor-pointer sm:my-4 sm:mx-0 my-0 mx-4 text-blue-400 hover:text-teal-700 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                      size="lg"
+                      icon={faVolleyballBall}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

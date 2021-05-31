@@ -86,7 +86,7 @@ export const Skills: React.FC = () => {
             Skills &amp; Experiences
           </h1>
         </div>
-        <div className="flex flex-wrap justify-center -m-4">
+        <div className="loader flex flex-wrap justify-center -m-4">
           {mainSkillset.map((skill, key) => {
             return (
               <CardComponent1

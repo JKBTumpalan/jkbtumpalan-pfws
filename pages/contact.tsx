@@ -21,14 +21,14 @@ export const Contact: React.FC = () => {
           concerns.
         </p>
         <div className="w-full mt-5 flex flex-col items-center">
-          <div className="flex md:flex-row flex-col justify-center">
+          <div className="loader flex md:flex-row flex-col justify-center">
             <a href="https://m.me/khalsuu">
-              <button className="md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+              <button className="animate-tracking-in-contract-bck-bottom md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
                 Send message
               </button>
             </a>
             <a href="mailto:jbtumpalan@up.edu.ph?subject=Website E-mail">
-              <button className="md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
+              <button className="animate-tracking-in-contract-bck-bottom md:my-0 my-2 px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-700 rounded-md sm:mx-2 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">
                 Send e-mail
               </button>
             </a>
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex flex-col justify-center items-center my-10 md:ml-10">
+      <div className="animate-tracking-in-expand-fwd-top mx-auto flex flex-col justify-center items-center my-10 md:ml-10">
         <div className="h-96 bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative ">
           <div className="mapouter ">
             <div className="gmap_canvas ">

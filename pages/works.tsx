@@ -133,12 +133,12 @@ export const Works: React.FC = () => {
           closeModal={closeModal}
         />
         <div className="flex lg:flex-row flex-col mt-10">
-          <div className="flex flex-wrap lg:w-1/2 w-full ">
+          <div className="loader flex flex-wrap lg:w-1/2 w-full ">
             <div
               onClick={() => {
                 openModal(0);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -150,7 +150,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(1);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -162,7 +162,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(2);
               }}
-              className="animate-tilt-in-fwd-tr md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -176,7 +176,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(3);
               }}
-              className="animate-tilt-in-fwd-tr md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -188,7 +188,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(4);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -200,7 +200,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(5);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -217,7 +217,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(6);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -229,7 +229,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(7);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -241,7 +241,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(8);
               }}
-              className="animate-tilt-in-fwd-tr md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -255,7 +255,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(9);
               }}
-              className="animate-tilt-in-fwd-tr md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-full transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -267,7 +267,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(10);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
@@ -279,7 +279,7 @@ export const Works: React.FC = () => {
               onClick={() => {
                 openModal(11);
               }}
-              className="animate-slide-in-elliptic-top-fwd md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
+              className="animate-scale-in-center md:p-2 p-1 md:h-96 w-1/2 transition duration-125 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer"
             >
               <img
                 alt="gallery"
