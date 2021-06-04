@@ -27,23 +27,24 @@ const mainSkillset = [
     icon: faJs,
   },
   {
-    title: "SQL",
-    description:
-      "Used different NoSQL and SQL databases (MariaDB, PostgreSQL, MongoDB), ORMs (Mongoose, Sequelize), and query languages like GraphQL.",
-    icon: faDatabase,
-  },
-];
-
-const subSkillset = [
-  {
     title: "Python",
     description:
       "used python to create projects like a programming language interpreter, a CLI-othello, etc.",
     icon: faPython,
   },
+];
+
+const subSkillset = [
   {
-    title: "Vue",
-    description: "used Vuejs for some web applications.",
+    title: "SQL",
+    description:
+      "Used different NoSQL and SQL databases (MariaDB, PostgreSQL, MongoDB), ORMs (Mongoose, Sequelize), and query languages like GraphQL.",
+    icon: faDatabase,
+  },
+
+  {
+    title: "Vue, Next",
+    description: "used Vue.js and next.js for some web applications.",
     icon: faVuejs,
   },
   {

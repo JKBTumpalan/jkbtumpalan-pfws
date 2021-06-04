@@ -68,7 +68,7 @@ export const About: React.FC = () => {
               <p className="leading-relaxed text-base mb-4 text-white">
                 A competitive and skillful undergraduate Computer Science
                 student passionate in creating computer applications and
-                building modern progressive web applications.
+                building modern web applications.
               </p>
               <p className="leading-relaxed text-base mb-4 text-white">
                 Cheerful and well-organized person with organizational
